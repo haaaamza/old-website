@@ -21,11 +21,11 @@ Lately, there have been several interesting papers [^1][^2][^3][^4][^5][^6][^7][
 
 # Repository
 
-The repository is available [here](https://github.com/NotAnyMike/UnsupervisedDepthAndPose){:target="_blank"}, it is just a preliminary version of  *Zhou et al.*[^1] but is capable of producing reasonable results:
+A basic implementation of this idea available [here](https://github.com/NotAnyMike/BareSfM/){:target="blank"}, and an extension of monodepth2 is available [here](https://github.com/NotAnyMike/Monodepth2){:target="blank"}. Here are some results of the extended monodepth2 model:
 
-| ![2011_09_26_drive_0005_sync_02](https://github.com/NotAnyMike/UnsupervisedDepthAndPose/raw/master/misc/2011_09_26_drive_0005_sync_02.gif?raw=ture) | ![s 21](https://github.com/NotAnyMike/UnsupervisedDepthAndPose/raw/master/misc/sequences_21.gif?raw=true) |
+| ![2011_09_26_drive_0005_sync_02](https://raw.githubusercontent.com/NotAnyMike/monodepth2/master/assets/2011_09_26_drive_0005_sync_02.gif) | ![s 21](https://raw.githubusercontent.com/NotAnyMike/monodepth2/master/assets/2011_09_26_drive_0011_sync.gif) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![s6](https://github.com/NotAnyMike/UnsupervisedDepthAndPose/raw/master/misc/sequences_06.gif?raw=true) | ![s 7](https://github.com/NotAnyMike/UnsupervisedDepthAndPose/raw/master/misc/sequences_07.gif?raw=true) |
+| ![s6](https://github.com/NotAnyMike/monodepth2/blob/master/assets/2011_09_26_drive_0104_sync.gif?raw=true) | ![s 7](https://github.com/NotAnyMike/monodepth2/blob/master/assets/2011_09_26_drive_0091_sync.gif?raw=true) |
 
 ---
 
