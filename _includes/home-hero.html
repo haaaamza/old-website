@@ -5,6 +5,7 @@
     <div class="col-md-12">
 
       <div class="hero-container">
+        <a class="home_link_hero" href="{{site.baseurl}}/"></a>
 
         <div class="hero-content">
 
@@ -26,7 +27,7 @@
           {% endif %}
 
           <div class="hero-buttons">
-
+            <a href="{{ site.baseurl }}/" target="_self"><button class="btn btn-default btn-lg"><i class="fas fa-home fa-lg"></i>Home</button></a>
             {% if site.twitter_username != '' %}
               <a href="https://twitter.com/{{ site.twitter_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-twitter fa-lg"></i>Twitter</button></a>
             {% endif %}
