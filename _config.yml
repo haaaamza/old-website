@@ -107,8 +107,5 @@ pagination:
 #### Phantom Navigation menu
 enable_nav: true
 nav_item:
-  - { url: '/', text: 'All' }
-  - { url: '/projects', text: 'Projects' }
-  - { url: '/stuff', text: 'Other stuff' }
-  - { url: '/about', text: 'About me' }
-  - { url: '/list100', text: 'List 100' }
+  - { url: '/', text: 'Home' }
+  - { url: '/about', text: 'About' }
