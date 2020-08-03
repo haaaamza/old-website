@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Mike.W" #"Hello. I'm Mike Woodcock."
-email: 'MikeWoodcockC@gmail.com'
+title: "Hello, I'm Hamza Mian" #"Hello. I'm Mike Woodcock."
+email: 'mian.hamza@mail.mcgill.ca'
 description: "I'm a software developer from Montreal creating cool apps."
 baseurl: "/project" # the subpath of your site, e.g. /blog
 url: "https://haaaamza.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -22,8 +22,8 @@ twitter_username: ''
 github_username: 'haaaamza'
 medium_username: '' #'blog.jamigibbs.com'
 cv_url: ''
-section_title: 'All projects'
-section_subtitle: "I focus on studying how to make current ML models understand their surroundings more efficiently. Here is a list of some projects I've worked on, enjoy."
+section_title: 'Projects'
+section_subtitle: "Here are some interesting Projects I've worked on."
 projects_title: 'Latest Work'
 projects_subtitle: "Here is a list of some of my lastest works or projects, enjoy."
 unrelated_title: 'General stuff'
@@ -37,8 +37,8 @@ plugins:
 
 ### Phantom settings
 #paginate: 100
-footer_text: ' Powered by Jekyll with Phantom template by Jami Gibbs © Copyright Mike Woodcock.'
-admin_name: 'Mike.W'
+footer_text: ' Powered by Jekyll with Phantom template by Jami Gibbs and Mike WoodCock © Copyright Hamza Mian.'
+admin_name: 'Hamza Mian'
 google_analytics: "UA-77835108-1" # Update with your own tracking ID
 enable_contact: false
 permalink: /:title/
