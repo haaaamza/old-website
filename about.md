@@ -7,7 +7,7 @@ permalink: /about/
 
 # Hello,
 
-<img src="/project/img/me.png" alt="me" style="display: block; margin: 0 auto; height: 200px;">
+<img src="/project/img/me.png" alt="me" style="display: block; margin: 0 auto; height: 300px;">
 
 Hello! 
 
