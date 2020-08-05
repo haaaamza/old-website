@@ -20,7 +20,7 @@ This app was built with a team of three individuals as part of the Final year de
 This project is a branch in a tree of future work for HealthCare Apps. The idea behind tracking nutrition was in order to help diabetics keep track of their total carbohydrate count, but also because the Integrated Microsystems Lab at McGill (IML) ([link](http://www.iml.ece.mcgill.ca/index_iml.php)) is developing a database that tracks the body's insulin responses to food. The IML want's to build a closed all-in one solution, where diabetic patients are able to optimize their insulin shots according to the foods they've eaten. One branch of the project, is to use ML and image detection to count nutrient intake, where the idea is to use a camera to detect foods and track carbohydrates. The CDC reccomends diabetics count Carbs in order to "make managing blood sugar easier".[^1]
 
 ## The App
-![img1](/project/img/posts/food-detection/image14.png)
+![img1](/project/img/posts/food-detection/image14.png){:height="491" width="401"}
 
 The app is made using SWIFT and CoreML. The architecture of the app is shown in the flow chart above. The four tabs each have specific functions, the camera tab detects the image using a ML Model and the Search Tab requires a text input; after both tabs recieve input they send a JSON query to the Nutritionix API[^2] which returns the nutritional values of the food items. The carb counter tab takes all of the food inputs and displays them in a list that displays the total and individual carbohydrate content. Here are some of the images illustrating the functionality of the app:
 
