@@ -35,7 +35,7 @@ The app is made using SWIFT and CoreML. The architecture of the app is shown in 
 
 Lastly, the app is integrated with Apple Healthkit, this was done in order to open up the door to further integration of the App with the IML teams insulin database with Apple's glucose monitoring kit.[^3]
 
-| ![s6](/img/posts/food-detection/image4.png)) | ![s 7](/project/img/posts/food-detection/image18.png)) |
+| ![s6](/img/posts/food-detection/image4.png)) | ![s 7](/img/posts/food-detection/image18.png)) |
 
 The app was built to provide an easy to use interface with the user in mind. UI/UX was a priority for our team and every interaction and edge case was taken into account. The team picked up on SWIFT development on the go, therefore the views could have been more smooth, e.g better button placement and color schemes, simpler human-computer interaction (Steve Jobs' 3 click aproach to accessing iPod songs). There could have also been a greater emphasis on analytics, and the data taken from Apple's healthkit and food inputs could have been intagrated to provide a more data driven approach to diabetes, which to my best knoweledge, is the next goal of the IML team at McGill.
 
