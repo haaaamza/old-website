@@ -20,18 +20,18 @@ This app was built with a team of three individuals as part of the Final year de
 This project is a branch in a tree of future work for HealthCare Apps. The idea behind tracking nutrition was in order to help diabetics keep track of their total carbohydrate count, but also because the Integrated Microsystems Lab at McGill (IML) ([link](http://www.iml.ece.mcgill.ca/index_iml.php)) is developing a database that tracks the body's insulin responses to food. The IML want's to build a closed all-in one solution, where diabetic patients are able to optimize their insulin shots according to the foods they've eaten. One branch of the project, is to use ML and image detection to count nutrient intake, where the idea is to use a camera to detect foods and track carbohydrates. The CDC reccomends diabetics count Carbs in order to "make managing blood sugar easier".[^1]
 
 ## The App
-![img](/project/img/posts/food-detection/image14.png)
+![img1](/project/img/posts/food-detection/image14.png)
 
 The app is made using SWIFT and CoreML. The architecture of the app is shown in the flow chart above. The four tabs each have specific functions, the camera tab detects the image using a ML Model and the Search Tab requires a text input; after both tabs recieve input they send a JSON query to the Nutritionix API[^2] which returns the nutritional values of the food items. The carb counter tab takes all of the food inputs and displays them in a list that displays the total and individual carbohydrate content. Here are some of the images illustrating the functionality of the app:
 
-![img](/project/img/posts/food-detection/App-Built.gif)
+![img2](/project/img/posts/food-detection/App-Built.gif)
 
 
-| ![2011_09_26_drive_0005_sync_02](/project/img/posts/food-detection/image17.png) | ![s 21](/project/img/posts/food-detection/image13.png)) |
+| ![img3](/project/img/posts/food-detection/image17.png) | ![img4](/project/img/posts/food-detection/image13.png)) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![s6](/project/img/posts/food-detection/image10.png)) | ![s 7](/project/img/posts/food-detection/image15.png)) |
+| ![img5](/project/img/posts/food-detection/image10.png)) | ![img6](/project/img/posts/food-detection/image15.png)) |
 
-![img](/project/img/posts/food-detection/image12.png)
+![img7](/project/img/posts/food-detection/image12.png)
 
 Lastly, the app is integrated with Apple Healthkit, this was done in order to open up the door to further integration of the App with the IML teams insulin database with Apple's glucose monitoring kit.[^3]
 
@@ -47,7 +47,7 @@ We trained the model using tiny-YOLO as it is faster on devices such as cell pho
 
 For the training step we used Google Cloud’s virtual machine with a GPU of NVIDIA Tesla T4. The training process took a total of 23,000 iterations. The final model was chosen based on the highest mAP (mean average precision) and IoU (intersection over union) as well as the precision given on the validation dataset to avoid overfitting. The training was stopped when the average loss no longer decreased.
 
-| ![s6](/img/posts/food-detection/image8.png)) | ![s 7](/img/posts/food-detection/image16.png)) |
+| ![img8](/img/posts/food-detection/image8.png)) | ![img9](/img/posts/food-detection/image16.png)) |
 
 After training the model using darknet, we used darkflow to convert it from the format of weights to the format of pb. Then we used tf-coreml to convert the model to Core ML. When using tf-coreml, it is necessary to set a few parameters that correspond to the training method used. In our case, the channel color must be set to RGB and the weights are normalized in the range from 0 to 1 so the image scale needs to be set to 1/255.0. If those parameters are missing, the Core ML would generate incorrect predictions.
 
