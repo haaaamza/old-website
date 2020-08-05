@@ -27,7 +27,7 @@ The app is made using SWIFT and CoreML. The architecture of the app is shown in 
 ![img2](/project/img/posts/food-detection/App-Built.gif)
 
 
-| ![img3](/project/img/posts/food-detection/image17.png =360x640) | ![img4](/project/img/posts/food-detection/image13.png =360x640) |
+| ![img3](/project/img/posts/food-detection/image17.png=360x640) | ![img4](/project/img/posts/food-detection/image13.png =360x640) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![img5](/project/img/posts/food-detection/image10.png =360x640) | ![img6](/project/img/posts/food-detection/image15.png =360x640) |
 
