@@ -20,22 +20,22 @@ This app was built with a team of three individuals as part of the Final year de
 This project is a branch in a tree of future work for HealthCare Apps. The idea behind tracking nutrition was in order to help diabetics keep track of their total carbohydrate count, but also because the Integrated Microsystems Lab at McGill (IML) ([link](http://www.iml.ece.mcgill.ca/index_iml.php)) is developing a database that tracks the body's insulin responses to food. The IML want's to build a closed all-in one solution, where diabetic patients are able to optimize their insulin shots according to the foods they've eaten. One branch of the project, is to use ML and image detection to count nutrient intake, where the idea is to use a camera to detect foods and track carbohydrates. The CDC reccomends diabetics count Carbs in order to "make managing blood sugar easier".[^1]
 
 ## The App
-![img](/img/posts/food-detection/image14.png)
+![img](/project/img/posts/food-detection/image14.png)
 
 The app is made using SWIFT and CoreML. The architecture of the app is shown in the flow chart above. The four tabs each have specific functions, the camera tab detects the image using a ML Model and the Search Tab requires a text input; after both tabs recieve input they send a JSON query to the Nutritionix API[^2] which returns the nutritional values of the food items. The carb counter tab takes all of the food inputs and displays them in a list that displays the total and individual carbohydrate content. Here are some of the images illustrating the functionality of the app:
 
-![img](/img/posts/food-detection/App-Built.gif)
+![img](/project/img/posts/food-detection/App-Built.gif)
 
 
-| ![2011_09_26_drive_0005_sync_02](/img/posts/food-detection/image17.png) | ![s 21](/img/posts/food-detection/image13.png)) |
+| ![2011_09_26_drive_0005_sync_02](/project/img/posts/food-detection/image17.png) | ![s 21](/project/img/posts/food-detection/image13.png)) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![s6](/img/posts/food-detection/image10.png)) | ![s 7](/img/posts/food-detection/image15.png)) |
+| ![s6](/project/img/posts/food-detection/image10.png)) | ![s 7](/project/img/posts/food-detection/image15.png)) |
 
-![img](/img/posts/food-detection/image12.png)
+![img](/project/img/posts/food-detection/image12.png)
 
 Lastly, the app is integrated with Apple Healthkit, this was done in order to open up the door to further integration of the App with the IML teams insulin database with Apple's glucose monitoring kit.[^3]
 
-| ![s6](/img/posts/food-detection/image4.png)) | ![s 7](/img/posts/food-detection/image18.png)) |
+| ![s6](/project/img/posts/food-detection/image4.png)) | ![s 7](/project/img/posts/food-detection/image18.png)) |
 
 The app was built to provide an easy to use interface with the user in mind. UI/UX was a priority for our team and every interaction and edge case was taken into account. The team picked up on SWIFT development on the go, therefore the views could have been more smooth, e.g better button placement and color schemes, simpler human-computer interaction (Steve Jobs' 3 click aproach to accessing iPod songs). There could have also been a greater emphasis on analytics, and the data taken from Apple's healthkit and food inputs could have been intagrated to provide a more data driven approach to diabetes, which to my best knoweledge, is the next goal of the IML team at McGill.
 
