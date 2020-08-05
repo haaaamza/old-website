@@ -47,7 +47,7 @@ We trained the model using tiny-YOLO as it is faster on devices such as cell pho
 
 For the training step we used Google Cloud’s virtual machine with a GPU of NVIDIA Tesla T4. The training process took a total of 23,000 iterations. The final model was chosen based on the highest mAP (mean average precision) and IoU (intersection over union) as well as the precision given on the validation dataset to avoid overfitting. The training was stopped when the average loss no longer decreased.
 
-| ![img10](/project/img/posts/food-detection/image8.png)) | ![img11](project/img/posts/food-detection/image16.png)) |
+| ![img10](/project/img/posts/food-detection/image8.png)) | ![img11](/project/img/posts/food-detection/image16.png)) |
 
 After training the model using darknet, we used darkflow to convert it from the format of weights to the format of pb. Then we used tf-coreml to convert the model to Core ML. When using tf-coreml, it is necessary to set a few parameters that correspond to the training method used. In our case, the channel color must be set to RGB and the weights are normalized in the range from 0 to 1 so the image scale needs to be set to 1/255.0. If those parameters are missing, the Core ML would generate incorrect predictions.
 
