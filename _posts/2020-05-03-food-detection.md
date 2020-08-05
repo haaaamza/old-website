@@ -5,7 +5,7 @@ date: 2020-05-03 12:00:00
 categories: ML Image\ Detection
 type: project
 tags: SWIFT Pytorch
-featured_image: '/project/img/posts/food-detection/food-detection.gif'
+featured_image: '/project/img/posts/food-detection/food-detection-crp.gif'
 project_link: 'https://github.com/haaaamza/Design-Project'
 button_icon: 'github'
 button_text: 'Visit Project'
