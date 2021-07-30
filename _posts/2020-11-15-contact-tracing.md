@@ -1,4 +1,3 @@
-```markdown
 ---
 layout: inner
 title: 'Contact Tracing with iBeacons'
