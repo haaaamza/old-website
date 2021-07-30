@@ -1,43 +1,26 @@
-{% include header.html %}
+<!DOCTYPE html>
+<html>
+  {% include head2.html %}
 
-    {% include home-hero.html %}
+  <body>
+    {% include header2.html %}
 
-    <main id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="home">
+          <img
+            src="{{ page.profile_picture.src | absolute_url }}"
+            alt="{{ page.profile_picture.alt }}"
+            class="profile-pic"
+          />
 
-            {% if site.section_title != '' %}
-            <h2 class="section-title text-center">{{ site.section_title }}</h2>
-            {% endif %}
-            {% if site.section_subtitle != '' %}
-            <p class="section-subtitle text-center">{{ site.section_subtitle }}</p>
-            {% endif %}
-
-            <div class="break"></div>
-
-            {% for post in site.posts %}
-	      {% if post.type != "hidden" %}
-	      <a href="{{ post.url | prepend: site.baseurl }}">
-                <div class="wow fadeIn">
-		{% assign mod = forloop.index | modulo:2 %}
-		{% if mod == 0 %}
-                  {% include content-left.html %}
-                {% endif %}
-  
-                {% if mod == 1 %}
-                  {% include content-right.html %}
-                {% endif %}
-              </div>
-	      </a>
-	      {% endif %}
-            {% endfor %}
-
-            {% include pagination.html %}
-
-          </div>
+          {{ content }}
         </div>
       </div>
-    </main>
+    </div>
 
-{% include footer.html %}
+    {% include footer2.html %}
+
+    {% include foot2.html %}
+  </body>
+</html>
