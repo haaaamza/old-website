@@ -16,7 +16,7 @@
 title: "Hello, I'm Hamza Mian" #"Hello. I'm Mike Woodcock."
 email: 'mian.hamza@mail.mcgill.ca'
 description: "I'm a software developer from Montreal creating cool apps."
-baseurl: "/project" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://haaaamza.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ''
 github_username: 'haaaamza'

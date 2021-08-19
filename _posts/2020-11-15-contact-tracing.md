@@ -5,7 +5,7 @@ date: 2020-11-15 12:00:00
 categories: iBeacons Firebase iOS ML
 type: project
 tags: SWIFT Firebase iBeacon
-featured_image: '/project/img/posts/contact-tracing/contact-tracing.png'
+featured_image: '/img/posts/contact-tracing/contact-tracing.png'
 project_link: 'https://github.com/haaaamza/ECSE-682/tree/master/final%20project'
 button_icon: 'github'
 button_text: 'Visit Project'
@@ -36,13 +36,13 @@ The infrastructure is comprised of 3 major processing endpoints:
   2. Mobile App
   3. Firebase
   
-![img1](/project/img/posts/contact-tracing/flowchart.png){:height="400"}
+![img1](/img/posts/contact-tracing/flowchart.png){:height="400"}
 ### The iBeacon
 The board used for iBeacon simulation is the Thunderboard RS9116 WiSeConnect. The RS9116 module uses Bluetooth Low Energy to advertise as an iBeacon and UART communication via teraterm to configure the module as an iBeacon.
 
 The contact tracing app scans for the RS9116 beacons around which advertise their UUIDs, major, minor values. This helps the iOS device to calculate the location of a user from the beacon device. Figure 2 shows a sample iBeacon infrastructure that can be used indoors in order to find the location of the user.
 
-![img2](/project/img/posts/contact-tracing/table.png){:height="400"}
+![img2](/img/posts/contact-tracing/table.png){:height="400"}
 
 As shown in the figure above the iBeacon UUID, Major & Minor values can help pinpoint the exact location of the user. In this case the user is a student, this infrastructure is useful for contact tracing in small and enclosed spaces.
 
@@ -58,9 +58,9 @@ The app has 3 view controllers:
 	3. Information VC
 			• Sends user to WHO Website that gives information on COVID-19
 
-| ![img3](/project/img/posts/contact-tracing/ui1.png){:height="595"} | ![img4](/project/img/posts/contact-tracing/ui2.png){:height="595"} |
+| ![img3](/img/posts/contact-tracing/ui1.png){:height="595"} | ![img4](/img/posts/contact-tracing/ui2.png){:height="595"} |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![img5](/project/img/posts/contact-tracing/ui3.png){:height="595"} | ![img6](/project/img/posts/contact-tracing/ui4.png){:height="595"} |
+| ![img5](/img/posts/contact-tracing/ui3.png){:height="595"} | ![img6](/img/posts/contact-tracing/ui4.png){:height="595"} |
 
 The iBeacon tells the application the percieved distance of the user from the iBeacon. This is classified in three states: immediate, near, far. Being near/immediate means the user is within 3 metres of that particular iBeacon. 
 If the user is near or immediate to a particular iBeacon, the app will write to Firebase a struct containing:
@@ -72,7 +72,7 @@ If the user is near or immediate to a particular iBeacon, the app will write to 
 
 The information in the struct will ensure that if a user tests positive, all potentially exposed users can be notified. The struct will be able to pinpoint which users are within a 3 metre radius of the infected user within the same time frame. This is depicted in the figure below.
 
-![img7](/project/img/posts/contact-tracing/distance.png){:height="400"} 
+![img7](/img/posts/contact-tracing/distance.png){:height="400"} 
 
 ### Firebase
 We use a SnapshotListener that takes a Snapshot of the database, and runs selected code if the database has changed. A SnapshotListener is basically an observer, that notifies the application that data has changed. 
@@ -87,7 +87,7 @@ In our case the SnapshotListener picks up on a database change, and checks if th
 Firestore is scalable, it enables the application to support a growing population of users.[^2]
 
 The figure below shows the Firestore setup. Each seperate iBeacon will have a seperate subcollection that records all interactions between users. 
-![img8](/project/img/posts/contact-tracing/firestore.png){:height="400"} 
+![img8](/img/posts/contact-tracing/firestore.png){:height="400"} 
 
 ## Privacy
 Institutions such as provincial governments, schools, and companies can create unique accounts for their users. These accounts serve as a medium for authentication as Firebase Cloud has security rules that grant developer/authenticated accounts to access the remote storage.
